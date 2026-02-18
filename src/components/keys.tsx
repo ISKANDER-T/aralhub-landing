@@ -42,16 +42,17 @@ export const Keys = () => {
         {keys.map((item) => {
           return (
             <Card
+              key={item.text}
               className={cn(
                 "p-0",
-                "lg:w-[1160px] lg:flex-row lg:justify-between lg:items-start lg:gap-10 lg:rounded-l-2xl"
+                "lg:w-[1160px] lg:flex-row lg:justify-between lg:items-start lg:gap-10 lg:rounded-l-2xl",
               )}
             >
               <img src={item.img} className="lg:hidden rounded-t-[12px]" />
               <div
                 className={cn(
                   "flex flex-col gap-2 px-4 pb-4",
-                  "lg:pt-[30px] lg:pl-[30px] lg:gap-4"
+                  "lg:pt-[30px] lg:pl-[30px] lg:gap-4",
                 )}
               >
                 <Title text={item.text} type="three" />

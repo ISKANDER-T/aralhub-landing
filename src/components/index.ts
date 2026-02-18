@@ -6,3 +6,6 @@ export * from "./trust";
 export * from "./workers";
 export * from "./keys";
 export * from "./quotes";
+export * from "./approach";
+export * from "./work-process";
+export * from "./technologya";

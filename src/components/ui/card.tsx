@@ -22,7 +22,7 @@ export const Card: FC<CardProps> = ({
           secondary: "bg-[#4960F4]",
           default: "bg-white",
         }[variant],
-        className
+        className,
       )}
     >
       {children}

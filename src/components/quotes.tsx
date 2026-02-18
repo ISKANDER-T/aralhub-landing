@@ -38,7 +38,7 @@ export const Quotes = () => {
       <div className="flex flex-col gap-16 lg:gap-24">
         {quotes.map((item, index) => {
           return (
-            <div className="flex flex-col gap-4 lg:w-[1160px]">
+            <div key={item.text} className="flex flex-col gap-4 lg:w-[1160px]">
               <div className="flex lg:justify-between items-center gap-3 lg:gap-[108px]">
                 <img
                   src={item.img}
@@ -60,7 +60,7 @@ export const Quotes = () => {
                   <div
                     className={cn(
                       "hidden lg:flex lg:justify-start lg:items-start lg:gap-6",
-                      `${index === 1 ? "pl-[99px]" : "pr-[99px]"}`
+                      `${index === 1 ? "pl-[99px]" : "pr-[99px]"}`,
                     )}
                   >
                     <img src={quote} />

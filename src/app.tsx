@@ -1,12 +1,15 @@
 import {
+  Approach,
   Footer,
   Header,
   Keys,
   MainBanner,
   Quotes,
   Services,
+  Technologya,
   Trust,
   Workers,
+  WorkProcess,
 } from "./components";
 import { cn } from "./lib/utils";
 
@@ -21,6 +24,9 @@ function App() {
         <Workers />
         <Keys />
         <Quotes />
+        <Approach />
+        <WorkProcess />
+        <Technologya />
       </div>
       <Footer />
     </div>
