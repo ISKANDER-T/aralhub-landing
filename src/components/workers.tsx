@@ -9,29 +9,18 @@ import {
   Text,
   Title,
 } from "./ui";
-import {
-  Alimjan,
-  Atabek,
-  Babur,
-  Bektemir,
-  Darmanbek,
-  Me,
-  Timur,
-  Timurbek,
-} from "@/assets";
+import { Alimjan, Bektemir, Darmanbek, Me, Timur, Timurbek } from "@/assets";
 
 const workers: { img: string; name: string; special: string }[] = [
   { img: Timurbek, name: "Тимурбек Балтабеков", special: "Основатель AralHub" },
   { img: Darmanbek, name: "Дарманбек Пахратдинов", special: "Frontend" },
   { img: Me, name: "Искандер Турабаев", special: "Frontend" },
-  { img: Babur, name: "Бабур Парахатов", special: "Backend" },
   {
     img: Alimjan,
     name: "Алимжан Имниаминов",
     special: "Backend/Кибербезопасность",
   },
   { img: Bektemir, name: "Бектемир Изтелеуов", special: "Backend" },
-  { img: Atabek, name: "Атабек Өтебаев", special: "Android" },
   { img: Timur, name: "Тимур Данияров", special: "UX/UI дизайнер" },
 ];
 
@@ -40,7 +29,7 @@ const TitleWorker = ({ text }: { text: string }) => {
     <div
       className={cn(
         "font-semibold text-2xl leading-[125%] tracking-[-0.5px] text-center align-middle",
-        "lg:text-[32px]"
+        "lg:text-[32px]",
       )}
     >
       {text}

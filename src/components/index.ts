@@ -1,4 +1,3 @@
-export * from "./footer";
 export * from "./header";
 export * from "./main-banner";
 export * from "./services";
@@ -9,3 +8,5 @@ export * from "./quotes";
 export * from "./approach";
 export * from "./work-process";
 export * from "./technologya";
+export * from "./map";
+export * from "./footer";

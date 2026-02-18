@@ -31,9 +31,12 @@ import node from "./node.svg";
 import python from "./python.svg";
 import rails from "./rails.svg";
 import php from "./php.svg";
-
+import instagram from "./instagram.svg";
+import telegram from "./telegram.svg";
 export {
   five,
+  instagram,
+  telegram,
   java,
   node,
   php,
