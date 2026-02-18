@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Card, Text, Title } from "./ui";
+import { code } from "@/assets";
 
 export const Trust = () => {
   return (
@@ -8,7 +9,7 @@ export const Trust = () => {
         <div
           className={cn(
             "flex flex-col justify-center items-center gap-3",
-            "lg:w-[550px] lg:gap-6"
+            "lg:w-[550px] lg:gap-6",
           )}
         >
           <Title
@@ -22,7 +23,9 @@ export const Trust = () => {
           />
         </div>
 
-        <div className="mt-9 lg:w-[570px]">video</div>
+        <div className="mt-9 lg:w-[570px]">
+          <img src={code} className="w-full rounded-2xl" />
+        </div>
       </div>
     </Card>
   );
