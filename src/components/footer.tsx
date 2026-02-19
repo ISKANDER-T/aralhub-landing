@@ -1,7 +1,9 @@
 import { instagram, logoFull } from "@/assets";
+import { useTranslation } from "@/lib/use-translation";
 import { cn } from "@/lib/utils";
 
 export const Footer = () => {
+  const {t} = useTranslation()
   return (
     <div
       id="contact"
@@ -31,7 +33,7 @@ export const Footer = () => {
         </div>
         <div className={cn("lg:ml-[292px] lg:mr-5 lg:w-[275px]")}>
           <div className={cn("text-[20px] leading-7 tracking-[0%] mb-6")}>
-            Разделы
+            {t("Разделы")}
           </div>
           <div
             className={cn(
@@ -39,19 +41,19 @@ export const Footer = () => {
             )}
           >
             <div>
-              <a href="#main">О нас</a>
+              <a href="#main">{t("О нас")}</a>
             </div>
             <div>
-              <a href="#service">Услуги</a>
+              <a href="#service">{t("Услуги")}</a>
             </div>
             <div>
-              <a href="#work"></a>Как это работает
+              <a href="#work">{t("Как это работает")}</a>
             </div>
           </div>
         </div>
         <div className={cn("lg:w-[373px]")}>
           <div className={cn("text-[20px] leading-7 tracking-[0%] mb-6")}>
-            Свяжитесь с нами
+            {t("Свяжитесь с нами")}
           </div>
           <div
             className={cn(

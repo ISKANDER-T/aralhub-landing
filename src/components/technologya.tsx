@@ -1,5 +1,6 @@
 import { java, node, php, python, rails, sql } from "@/assets";
 import { Card, Title } from "./ui";
+import { useTranslation } from "@/lib/use-translation";
 
 const technologyaData: { img: string }[] = [
   {
@@ -23,10 +24,11 @@ const technologyaData: { img: string }[] = [
 ];
 
 export const Technologya = () => {
+  const {t} = useTranslation()
   return (
     <Card variant="primary" className="gap-6 pb-52 lg:pt-20 lg:pb-32 lg:gap-16">
       {" "}
-      <Title text={<>Технологии которые мы используем</>} />
+      <Title text={<>{t("Технологии которые мы используем")}</>} />
       <div className="grid grid-cols-2 gap-12 lg:flex lg:flex-row lg:gap-16 lg:items-center">
         {technologyaData.map((item) => (
           <div key={item.img}>

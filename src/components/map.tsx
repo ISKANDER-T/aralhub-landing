@@ -1,7 +1,10 @@
+import { useTranslation } from "@/lib/use-translation";
 import { cn } from "@/lib/utils";
 
-export const MapIframe = () => (
-  <div className={cn("flex flex-col text-white")}>
+export const MapIframe = () => {
+  const {t}= useTranslation()
+
+  return  <div className={cn("flex flex-col text-white")}>
     <iframe
       src="https://yandex.ru/map-widget/v1/?ll=59.614681%2C42.473580&z=19"
       className={cn(
@@ -20,13 +23,13 @@ export const MapIframe = () => (
           "text-[28px] leading-[35px] tracking-[-0.5px] font-semibold",
         )}
       >
-        Адрес
+        {t("Адрес")}
       </div>
       <div className={cn("text-lg leading-[29px] tracking-[0%] flex flex-col")}>
-        <div>г. Нукус</div>
-        <div className="lg:w-[500px]">ул. М. Жуманазарова, дом 57</div>
+        <div>{t("г. Нукус")}</div>
+        <div className="lg:w-[500px]">{t("ул. М. Жуманазарова, дом 57")}</div>
         <div>+998 94 982 60 00</div>
       </div>
     </div>
   </div>
-);
+  }

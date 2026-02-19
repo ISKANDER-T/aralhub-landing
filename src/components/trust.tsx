@@ -1,8 +1,10 @@
 import { cn } from "@/lib/utils";
 import { Card, Text, Title } from "./ui";
 import { code } from "@/assets";
+import { useTranslation } from "@/lib/use-translation";
 
 export const Trust = () => {
+  const {t} = useTranslation()
   return (
     <Card variant="secondary" className="lg:py-40 lg:px-[356px]">
       <div className="lg:w-[1160px] lg:flex lg:flex-row lg:gap-10">
@@ -15,11 +17,11 @@ export const Trust = () => {
           <Title
             className="lg:text-start"
             variant="secondary"
-            text="Нам доверяют разработку программного обеспечения"
+            text={t("Нам доверяют разработку программного обеспечения")}
           />
           <Text
             className="lg:text-start"
-            text="Мы увеличиваем возможности разработки для технических команд. Наша ценность не ограничивается только созданием команд, она равномерно распределена на протяжении всего жизненного цикла проекта."
+            text={t("Мы увеличиваем возможности разработки для технических команд. Наша ценность не ограничивается только созданием команд, она равномерно распределена на протяжении всего жизненного цикла проекта.")}
           />
         </div>
 

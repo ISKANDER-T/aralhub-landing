@@ -10,19 +10,8 @@ import {
   Title,
 } from "./ui";
 import { Alimjan, Bektemir, Darmanbek, Me, Timur, Timurbek } from "@/assets";
+import { useTranslation } from "@/lib/use-translation";
 
-const workers: { img: string; name: string; special: string }[] = [
-  { img: Timurbek, name: "Тимурбек Балтабеков", special: "Основатель AralHub" },
-  { img: Darmanbek, name: "Дарманбек Пахратдинов", special: "Frontend" },
-  { img: Me, name: "Искандер Турабаев", special: "Frontend" },
-  {
-    img: Alimjan,
-    name: "Алимжан Имниаминов",
-    special: "Backend/Кибербезопасность",
-  },
-  { img: Bektemir, name: "Бектемир Изтелеуов", special: "Backend" },
-  { img: Timur, name: "Тимур Данияров", special: "UX/UI дизайнер" },
-];
 
 const TitleWorker = ({ text }: { text: string }) => {
   return (
@@ -38,12 +27,26 @@ const TitleWorker = ({ text }: { text: string }) => {
 };
 
 export const Workers = () => {
+  const {t} = useTranslation()
+
+const workers: { img: string; name: string; special: string }[] = [
+  { img: Timurbek, name: "Тимурбек Балтабеков", special: t("Основатель AralHub") },
+  { img: Darmanbek, name: "Дарманбек Пахратдинов", special: "Frontend" },
+  { img: Me, name: "Искандер Турабаев", special: "Frontend" },
+  {
+    img: Alimjan,
+    name: "Алимжан Имниаминов",
+    special: t("Backend/Кибербезопасность"),
+  },
+  { img: Bektemir, name: "Бектемир Изтелеуов", special: "Backend" },
+  { img: Timur, name: "Тимур Данияров", special: "UX/UI дизайнер" },
+];
   return (
     <Card variant="primary" className="lg:py-20 lg:gap-6">
-      <Title text="Наша команда" />{" "}
+      <Title text={t("Наша команда")} />{" "}
       <Text
         variant="secondary"
-        text="В нашей команде AralHub работают опытные разработчики, которые профессионально подходят к каждому проекту. Их навыки и знания позволяют нам создавать качественные программные решения, соответствующие современным требованиям и ожиданиям клиентов."
+        text={t("В нашей команде AralHub работают опытные разработчики, которые профессионально подходят к каждому проекту. Их навыки и знания позволяют нам создавать качественные программные решения, соответствующие современным требованиям и ожиданиям клиентов.")}
       />
       <Carousel
         opts={{

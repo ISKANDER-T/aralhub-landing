@@ -1,41 +1,46 @@
 import { cel, cel2, five, four, one, six, three, two } from "@/assets";
 import { Card, Text, Title } from "./ui";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/lib/use-translation";
 
-const workProcessData: { img: string; title: string; text: string }[] = [
+
+export const WorkProcess = () => {
+  const {t}= useTranslation()
+
+  const workProcessData: { img: string; title: string; text: string }[] = [
   {
     img: one,
-    title: "Планирование и анализ требований",
-    text: "В AralHub требования анализируются через обсуждения и сбор идей, задачи и цели строятся по плану.",
+    title: t("Планирование и анализ требований"),
+    text: t("В AralHub требования анализируются через обсуждения и сбор идей, задачи и цели строятся по плану."),
   },
   {
     img: two,
-    title: "Собираем правильную команду",
-    text: "В AralHub команда формируется по навыкам и интересам, роли распределяются по сильным сторонам.",
+    title: t("Собираем правильную команду"),
+    text: t("В AralHub команда формируется по навыкам и интересам, роли распределяются по сильным сторонам."),
   },
   {
     img: three,
-    title: "Планирование спринта",
-    text: "В AralHub спринт планируется по приоритетам задач и срокам.",
+    title: t("Планирование спринта"),
+    text: t("В AralHub спринт планируется по приоритетам задач и срокам."),
   },
   {
     img: four,
-    title: "Проектирование архитектуры",
-    text: "В AralHub архитектура проекта создается с учетом масштабируемости и надежности.",
+    title: t("Проектирование архитектуры"),
+    text: t("В AralHub архитектура проекта создается с учетом масштабируемости и надежности."),
   },
   {
     img: five,
-    title: "Разработка и тестирование",
-    text: "В AralHub разработка идет итеративно с регулярным тестированием и проверкой кода.",
+    title: t("Разработка и тестирование"),
+    text: t("В AralHub разработка идет итеративно с регулярным тестированием и проверкой кода."),
   },
   {
     img: six,
-    title: "Развертывание",
-    text: "В AralHub развертывание проводится на облачных платформах с упором на стабильность и доступность.",
+    title: t("Развертывание"),
+    text: t("В AralHub развертывание проводится на облачных платформах с упором на стабильность и доступность."),
   },
 ];
 
-export const WorkProcess = () => {
+
   return (
     <Card
       className="gap-6 pb-52 lg:pt-20 lg:pb-32 lg:gap-16"
@@ -48,7 +53,7 @@ export const WorkProcess = () => {
       />
       <Title
         variant="secondary"
-        text={<>Как работает процесс разработки в AralHub</>}
+        text={<>{t("Как работает процесс разработки в AralHub")}</>}
       />
       <div
         className={cn(
