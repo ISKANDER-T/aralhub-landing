@@ -170,8 +170,14 @@ export const translations = {
 },
 "В AralHub мы внедряем надежные процессы обеспечения качества, чтобы гарантировать, что каждый продукт, который мы поставляем, соответствует самым высоким стандартам производительности и надежности.": {
   "EN": "At AralHub, we implement robust quality assurance processes to ensure that every product we deliver meets the highest standards of performance and reliability."
-}
+},
+"AralHub предоставляет услуги веб‑разработки высшего класса с акцентом на производительность, пользовательский опыт и новейшие технологии. От адаптивного дизайна до сложных серверных решений, мы гарантируем, что каждый проект будет настроен с учетом специфических потребностей наших клиентов.": {
+  "EN": "At AralHub, we specialize in providing comprehensive digital marketing services that drive growth and increase online visibility. From SEO and social media marketing to paid advertising and content creation, our team uses data-driven strategies to ensure your brand reaches its full potential."
+},
+"В AralHub мы специализируемся на предоставлении комплексных цифровых маркетинговых услуг, которые способствуют росту и повышению онлайн‑видимости. От SEO и маркетинга в социальных сетях до платной рекламы и создания контента, наша команда использует стратегии, основанные на данных, чтобы гарантировать, что ваш бренд достигнет своего полного потенциала.": {
+  "EN": "At AralHub, we specialize in providing comprehensive digital marketing services that drive growth and increase online visibility. From SEO and social media marketing to paid advertising and content creation, our team uses data-driven strategies to ensure your brand achieves its full potential.",
 
+},"Разработка веб‑сайтов": {"EN": "Website Development"}
 };
 
 export type TranslationsKeys = keyof typeof translations;
